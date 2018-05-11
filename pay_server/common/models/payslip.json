@@ -1,59 +1,60 @@
 {
-  "name": "PayUser",
+  "name": "Payslip",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "mixins": {
-  },
+  "mixins": {},
   "properties": {
-    "payroll_id":{
+    "payroll_id": {
       "type": "string",
       "required": true
     },
-    "emp_id":{
+    "emp_id": {
       "type": "string",
       "required": true
     },
-    "year":{
-      "type": "string",
-      "required": false
-    },
-    "month":{
+    "year": {
       "type": "string",
       "required": false
     },
-    "data":{
+    "month": {
       "type": "string",
       "required": false
     },
-    "status":{
+    "data": {
+      "type": "string",
+      "required": false
+    },
+    "status": {
       "type": "number",
       "required": true
     },
-    "unit":{
+    "payroll": {
       "type": "number",
       "required": true
     },
-    "note":{
+    "unit": {
       "type": "number",
       "required": true
     },
-    "creatTime":{
-      "type":"date",
-      "required":true
+    "note": {
+      "type": "number",
+      "required": true
     },
-    "modificationTime":{
+    "creatTime": {
+      "type": "date",
+      "required": true
+    },
+    "modificationTime": {
       "type": "string",
       "required": false,
-      "defaultFn":"now"
+      "defaultFn": "now"
     }
   },
   "validations": [],
-  "relations": {
-    
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

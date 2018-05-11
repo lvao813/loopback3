@@ -91,7 +91,7 @@ function disableAllDefaultApis(app) {
 // }
 
 module.exports =   (app) => {
-  disableAllDefaultApis(app);
+  // disableAllDefaultApis(app);
   aopPermission(app);
   // setMenu(app);
 };

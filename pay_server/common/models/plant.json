@@ -1,51 +1,52 @@
 {
-  "name": "Emp",
+  "name": "Plant",
   "base": "PersistedModel",
   "options": {
     "validateUpsert": true
   },
-  "mixins": {
-  },
+  "mixins": {},
   "properties": {
-    "id":{
+    "id": {
       "type": "string",
       "id": true,
-      "defaultFn":"uuidv4"
+      "defaultFn": "uuidv4"
     },
-    "phone":{
+    "phone": {
       "type": "string",
       "required": true
     },
-    "status":{
+    "status": {
       "type": "number",
       "required": true
     },
-    "passWord":{
-      "type": "string",
-      "required": true
-    },
-    "userId":{
+    "admin_id": {
       "type": "string",
       "required": false
     },
-    "payId":{
+    "role": {
       "type": "string",
       "required": true
     },
-    "creatTime":{
-      "type":"date",
-      "required":true
+    "adu_id": {
+      "type": "string",
+      "required": true
     },
-    "modificationTime":{
+    "note": {
+      "type": "string",
+      "required": true
+    },
+    "creatTime": {
+      "type": "date",
+      "required": true
+    },
+    "modificationTime": {
       "type": "string",
       "required": false,
-      "defaultFn":"now"
+      "defaultFn": "now"
     }
   },
   "validations": [],
-  "relations": {
-    
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

@@ -1,0 +1,52 @@
+{
+  "name": "Payroll",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {},
+  "properties": {
+    "file_name": {
+      "type": "string",
+      "required": true
+    },
+    "file_id": {
+      "type": "string",
+      "required": true
+    },
+    "adu_id": {
+      "type": "string",
+      "required": false
+    },
+    "stuff_count": {
+      "type": "number",
+      "required": false
+    },
+    "status": {
+      "type": "number",
+      "required": true
+    },
+    "unit": {
+      "type": "number",
+      "required": true
+    },
+    "note": {
+      "type": "number",
+      "required": true
+    },
+    "creatTime": {
+      "type": "date",
+      "required": true
+    },
+    "modificationTime": {
+      "type": "string",
+      "required": false,
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

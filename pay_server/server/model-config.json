@@ -35,7 +35,15 @@
     "dataSource": "db",
     "public": false
   },
-  "Emp":{
+  "Payroll": {
+    "dataSource": "pgDs",
+    "public": true
+  },
+  "Payslip": {
+    "dataSource": "pgDs",
+    "public": true
+  },
+  "Plant": {
     "dataSource": "pgDs",
     "public": true
   }
