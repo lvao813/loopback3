@@ -1,0 +1,51 @@
+{
+  "name": "Emp",
+  "base": "PersistedModel",
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+  },
+  "properties": {
+    "id":{
+      "type": "string",
+      "id": true,
+      "defaultFn":"uuidv4"
+    },
+    "phone":{
+      "type": "string",
+      "required": true
+    },
+    "status":{
+      "type": "number",
+      "required": true
+    },
+    "passWord":{
+      "type": "string",
+      "required": true
+    },
+    "userId":{
+      "type": "string",
+      "required": false
+    },
+    "payId":{
+      "type": "string",
+      "required": true
+    },
+    "creatTime":{
+      "type":"date",
+      "required":true
+    },
+    "modificationTime":{
+      "type": "string",
+      "required": false,
+      "defaultFn":"now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,59 @@
+{
+  "name": "PayUser",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+  },
+  "properties": {
+    "payroll_id":{
+      "type": "string",
+      "required": true
+    },
+    "emp_id":{
+      "type": "string",
+      "required": true
+    },
+    "year":{
+      "type": "string",
+      "required": false
+    },
+    "month":{
+      "type": "string",
+      "required": false
+    },
+    "data":{
+      "type": "string",
+      "required": false
+    },
+    "status":{
+      "type": "number",
+      "required": true
+    },
+    "unit":{
+      "type": "number",
+      "required": true
+    },
+    "note":{
+      "type": "number",
+      "required": true
+    },
+    "creatTime":{
+      "type":"date",
+      "required":true
+    },
+    "modificationTime":{
+      "type": "string",
+      "required": false,
+      "defaultFn":"now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    
+  },
+  "acls": [],
+  "methods": {}
+}
