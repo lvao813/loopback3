@@ -11,7 +11,7 @@
       "type": "string",
       "required": true
     },
-    "emp_id": {
+    "plant_id": {
       "type": "string",
       "required": true
     },
@@ -54,7 +54,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "Plant": {
+      "type": "hasOne",
+      "model": "Payslip",
+      "foreignKey": "plant_id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
